@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our cancer treatment app
+				medical: {
+					'100': '#ECF0F1',
+					'200': '#D6EAF8',
+					'300': '#AED6F1',
+					'400': '#85C1E9',
+					'500': '#3498DB',
+					'600': '#2874A6',
+					'700': '#21618C',
+					'800': '#1A5276',
+					'900': '#154360'
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,19 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				'ibm-plex': ['"IBM Plex Sans"', 'sans-serif']
 			}
 		}
 	},
